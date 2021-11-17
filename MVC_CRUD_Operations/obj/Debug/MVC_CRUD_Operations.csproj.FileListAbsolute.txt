@@ -73,3 +73,4 @@ C:\Users\Carbon\source\repos\MVC_CRUD_Operations\MVC_CRUD_Operations\bin\EntityF
 C:\Users\Carbon\source\repos\MVC_CRUD_Operations\MVC_CRUD_Operations\bin\EntityFramework.SqlServer.dll
 C:\Users\Carbon\source\repos\MVC_CRUD_Operations\MVC_CRUD_Operations\bin\EntityFramework.xml
 C:\Users\Carbon\source\repos\MVC_CRUD_Operations\MVC_CRUD_Operations\bin\EntityFramework.SqlServer.xml
+C:\Users\Carbon\source\repos\MVC_CRUD_Operations\MVC_CRUD_Operations\obj\Debug\MVC_CRUD_Operations.csproj.CopyComplete

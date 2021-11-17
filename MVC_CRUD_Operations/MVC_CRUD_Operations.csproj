@@ -122,6 +122,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Context\ProjectContext.cs" />
     <Compile Include="Models\DataTransferObject\CreateProductDTO.cs" />
+    <Compile Include="Models\DataTransferObject\EditProductDTO.cs" />
     <Compile Include="Models\Entities\Abstract\BaseEntity.cs" />
     <Compile Include="Models\Entities\Concrete\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -142,7 +143,10 @@
     <Content Include="Content\fonts\FontAwesome.otf" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_LayoutPage.cshtml" />
-    <Content Include="Views\Product\CreateProduct.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
+    <Content Include="Views\Product\List.cshtml" />
+    <Content Include="Views\Product\Edit.cshtml" />
+    <Content Include="Views\Product\Details.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

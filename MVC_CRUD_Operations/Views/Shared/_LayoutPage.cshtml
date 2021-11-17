@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Boxed Layout</title>
+    <title>AdminLTE 2 | Fixed Layout</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -27,8 +27,9 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<!-- ADD THE CLASS layout-boxed TO GET A BOXED LAYOUT -->
-<body class="hold-transition skin-blue layout-boxed sidebar-mini">
+<!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
+<!-- the fixed layout is not compatible with sidebar-mini -->
+<body class="hold-transition skin-blue fixed sidebar-mini">
     <!-- Site wrapper -->
     <div class="wrapper">
 
@@ -45,6 +46,9 @@
                 <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                     <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </a>
 
                 <div class="navbar-custom-menu">
@@ -162,6 +166,7 @@
                                             <a href="#">Friends</a>
                                         </div>
                                     </div>
+                                    <!-- /.row -->
                                 </li>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
@@ -234,9 +239,9 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                            <li class="active"><a href="boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                            <li><a href="fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+                            <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+                            <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+                            <li class="active"><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
                             <li><a href="collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
                         </ul>
                     </li>
@@ -390,7 +395,9 @@
 
         <!-- =============================================== -->
         <!-- Content Wrapper. Contains page content -->
-        @RenderBody()
+        <div class="content-wrapper">
+            @RenderBody()
+        </div>
         <!-- /.content-wrapper -->
 
         <footer class="main-footer">
@@ -592,15 +599,13 @@
         </aside>
         <!-- /.control-sidebar -->
         <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+             immediately after the control sidebar -->
         <div class="control-sidebar-bg"></div>
     </div>
     <!-- ./wrapper -->
     <!-- jQuery 3 -->
-
     <script src="~/Content/scripts/jquery.min.js"></script>
     <!-- Bootstrap 3.3.7 -->
-
     <script src="~/Content/scripts/bootstrap.min.js"></script>
     <!-- SlimScroll -->
     <script src="~/Content/scripts/jquery.slimscroll.min.js"></script>
